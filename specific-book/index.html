@@ -3,28 +3,105 @@
     <head>
         <meta charset="UTF-8">
         <title>Book Name</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0c0100b02a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <hr>
-            <h1>The Great Dune</h1>
-            <nav></nav>
-            <hr>
-        </header>
-        <main>
-            <img src="images/book.png" alt="book" width="200" height="200">
-            <p><strong>Book name: </strong>Book name</p>
-            <p><strong>Book author: </strong>Book author</p>
-            <p><strong>Book tags: </strong>Book tags</p>
-            <form action="/" method="post">
-                <p>Price $52.72</p>
-                <label for="books-count">Count</label>
-                <input type="number" id="books-count" name="books-count" placeholder="number of books to buy">
-                <p>Total price $52.72</p>
-                <button type="submit">Add to cart</button>
-            </form>
-            <p><strong>Description: </strong>A book about a book.</p>
-        </main>
-        <footer></footer>
+        <div class="container-fluid px-0">
+            <header>
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg flex-fill px-0 py-2">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="../images/logo.svg" class="img-fluid rounded" alt="atreides-emblem-gold">
+                            The Great Dune
+                        </a>
+                        <div class="collapse navbar-collapse mx-3">
+                            <form class="form-inline flex-grow-1">
+                                <input class="form-control flex-grow-1" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn header-btn" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <span><a class="nav-item nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a></span>
+                            <span><a class="nav-item nav-link" href="#"><i class="fa-solid fa-user"></i></a></span>
+                            <div class="collapse navbar-collapse ml-3">
+                                <div class="navbar-nav">
+                                    <button class="nav-item btn header-btn" type="submit">Sign out</button>                            
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="card border-0">
+                    <div class="row my-5">
+                        <div class="col-md-5 col-sm-12 p-0">
+                            <img src="../images/specific-book/book.png" class="img-fluid h-100 p-3" alt="book-default">
+                        </div>
+                        <div class="col-md-7 col-sm-12 p-sm-0">
+                            <div class="card-body d-flex flex-column justify-content-between h-100 ml-md-5 p-md-0 pb-sm-0">
+                                <section class="book-name-author-tags">
+                                    <h5 class="card-title">Book name</h5>
+                                    <h6 class="card-subtitle">Book author</h6>
+                                    <p class="card-text my-3">Book tags:</p>
+                                </section>
+                                <section class="book-price">
+                                    <p class="card-text">Price $52.72</p>
+                                </section>
+                                <section class="d-flex flex-row justify-content-between align-items-center">
+                                    <h6 class="card-title m-0">Total price $52.72</h6>
+                                    <form class="form-inline w-25">
+                                        <input class="form-control w-100" type="number" name="books count" placeholder="Count">
+                                    </form>
+                                </section>
+                                <section class="align-self-end w-100 button-buy">
+                                    <button class="btn main-btn w-100" type="submit">Add to cart</button>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 px-0">
+                        <div class="card description">
+                            <h5 class="card-header">Description</h5>
+                            <div class="card-body">
+                                <p class="card-text">Book description.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="row mt-5">
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-md-start justify-content-sm-center">
+                        <a class="navbar-brand" href="#">
+                            <img src="../images/logo.svg" class="rounded" alt="atreides-emblem-gold">
+                            The Great Dune
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">About us</a></li>
+                            <li class="list-group-item"><a href="#">Contacts</a></li>
+                            <li class="list-group-item"><a href="#">Our social networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">For clients</a></li>
+                            <li class="list-group-item"><a href="#">Shipping and payments</a></li>
+                            <li class="list-group-item"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

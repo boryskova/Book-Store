@@ -3,30 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <title>Sign In</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0c0100b02a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <hr>
-            <h1>The Great Dune</h1>
-            <nav></nav>
-            <hr>
-        </header>
-        <main>
-            <img src="images/avatar.png" alt="avatar-the-last-airbander" width="200" height="200">
-            <form action="/" mathod="post">
-                <div>
-                    <label for="name">
-                        <h4>Username</h4>
-                        <input type="text" id="name" name="user-name" placeholder="type Username">
-                    </label>
+        <div class="container-fluid px-0">
+            <header>
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg flex-fill px-0 py-2">
+                        <a class="navbar-brand mx-auto" href="#">
+                            <img src="../images/logo.svg" class="img-fluid rounded" alt="atreides-emblem-gold">
+                            The Great Dune
+                        </a>
+                    </nav>
                 </div>
-                <div>
-                    <label for="password"></label>
-                    <input type="password" id="password" name="user-password" placeholder="type password">
+            </header>
+            <main>
+                <div class="row">
+                    <div class="col-md-5 p-5">
+                        <section class="d-flex flex-column sign-in">
+                            <h3>Sign In</h3>
+                            <div class="card border-0 mt-4">
+                                <img src="../images/signin/dune-fremen.svg" alt="dune-fremen" class="img-fluid mx-auto p-4" width="200" height="200">
+                                <div class="card-body">
+                                    <form class="px-2">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn w-100 main-btn">Sign In</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-7 p-0">
+                        <img src="../images/signin/il_fullxfull.3434037560_lb56.webp" class="img-fluid" alt="dune-landscape">
+                    </div>
                 </div>
-                <button type="submit">Sign In</button>
-            </form>
-        </main>
-        <footer></footer>
+            </main>
+            <footer></footer>
+        </div>
     </body>
 </html>
