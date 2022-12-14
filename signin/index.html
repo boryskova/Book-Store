@@ -9,24 +9,26 @@
         <script src="https://kit.fontawesome.com/0c0100b02a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container-fluid px-0">
+        <div class="container-fluid d-flex flex-column h-100 px-0">
             <header>
                 <div class="row">
-                    <nav class="navbar navbar-expand-lg flex-fill px-0 py-2">
-                        <a class="navbar-brand mx-auto" href="#">
+                    <nav class="navbar navbar-expand-lg flex-fill py-2">
+                        <a class="navbar-brand mx-auto mx-md-0" href="#">
                             <img src="../images/logo.svg" class="img-fluid rounded" alt="atreides-emblem-gold">
                             The Great Dune
                         </a>
                     </nav>
                 </div>
             </header>
-            <main>
-                <div class="row">
-                    <div class="col-md-5 p-5">
-                        <section class="d-flex flex-column sign-in">
+            <main class="h-100">
+                <div class="row flex-fill">
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="col-lg-4 col-md-12 p-5">
+                        <section class="d-flex flex-column mx-auto sign-in">
                             <h3>Sign In</h3>
                             <div class="card border-0 mt-4">
-                                <img src="../images/signin/dune-fremen.svg" alt="dune-fremen" class="img-fluid mx-auto p-4" width="200" height="200">
+                                <img src="../images/signin/avatar.png" alt="avatar" class="img-fluid mx-auto">
                                 <div class="card-body">
                                     <form class="px-2">
                                         <div class="form-group">
@@ -41,12 +43,34 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col-md-7 p-0">
-                        <img src="../images/signin/il_fullxfull.3434037560_lb56.webp" class="img-fluid" alt="dune-landscape">
+                    <div class="col-lg-7 p-0">
                     </div>
                 </div>
             </main>
-            <footer></footer>
+            <footer>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 d-flex justify-content-md-start justify-content-sm-center py-2">
+                        <a class="navbar-brand" href="#">
+                            <img src="../images/logo.svg" class="rounded" alt="atreides-emblem-gold">
+                            The Great Dune
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">About us</a></li>
+                            <li class="list-group-item"><a href="#">Contacts</a></li>
+                            <li class="list-group-item"><a href="#">Our social networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">For clients</a></li>
+                            <li class="list-group-item"><a href="#">Shipping and payments</a></li>
+                            <li class="list-group-item"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

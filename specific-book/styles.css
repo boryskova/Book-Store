@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -9,7 +10,8 @@ header, footer, .list-group-item {
 
 .row {
     width: 80%;
-    margin: 0 10%;
+    max-width: 1600px;
+    margin: auto;
     font-family: inter;
 }
 

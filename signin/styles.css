@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -8,9 +9,21 @@ header, footer, .list-group-item {
 }
 
 .row {
+    height: 100%;
     width: 100%;
-    margin: 0 0;
+    max-width: 1600px;
+    margin: auto;
     font-family: inter;
+}
+
+main > .row {
+    max-width: 100%;
+}
+
+main > .row > .col-lg-7 {
+    background-image: url("../images/signin/dune-landscape.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar-brand {
@@ -34,13 +47,23 @@ a:link {
     color: #123251;
 }
 
+.sign-in {
+    max-width: fit-content;
+}
+
 .sign-in > h3 {
     font-weight: 600;
+    color: #123251;
 }
 
 .card {
     color: #F4F4F2;
     background-color: #768FA5;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
 }
 
 .form-group > .form-control {
@@ -77,4 +100,33 @@ form > .main-btn:hover {
 form > .main-btn:focus {
     background-color: #123251;
     color: #F4F4F2;
+}
+
+@media screen and (max-width: 1600px) {
+    main > .row > .col-lg-7 {
+        background-image: url("../images/signin/dune-landscape-square.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main > .row > .col-lg-1 {
+        display: none;
+    }
+
+    main > .row > .col-lg-7 {
+        display: none;
+    }
+
+    main > .row > .col-md-12 {
+        background-image: url("../images/signin/dune-landscape-square.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sign-in > h3 {
+        color: #F4F4F2;
+        text-shadow: 0 0 2px #123251, 0 0 2px #123251;
+    }
 }
