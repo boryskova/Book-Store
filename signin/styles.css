@@ -126,7 +126,7 @@ form > .main-btn:focus {
     }
 
     .sign-in > h3 {
-        color: #F4F4F2;
-        text-shadow: 0 0 2px #123251, 0 0 2px #123251;
+        color: #123251;
+        text-shadow: 0 0 2px #F4F4F2, 0 0 2px #F4F4F2;
     }
 }
